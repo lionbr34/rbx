@@ -166,14 +166,14 @@
 
         .game-info .image {
             flex: 1;
-            min-width: 300px;
-            max-width: 2000px;  /* Aumentei a largura máxima */
+            min-width: 500px;  /* Aumentei a largura mínima da imagem */
+            max-width: 1200px;  /* Aumentei a largura máxima da imagem */
             margin: 1rem;
         }
 
         .game-info .image img {
-            width: 100%;
-            height: 500;  /* Mantendo a proporção da imagem */
+            width: 100%;  /* A imagem ocupará toda a largura do seu contêiner */
+            height: auto;  /* Mantendo a proporção da imagem */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
