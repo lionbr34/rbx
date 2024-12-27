@@ -47,10 +47,9 @@
             text-decoration: none;
             font-size: 1rem;
             padding: 0.5rem;
-            position: relative; /* Para permitir a criação de uma linha embaixo */
+            position: relative;
         }
 
-        /* Linha de destaque apenas */
         .navbar .menu a:hover::after {
             content: '';
             position: absolute;
@@ -58,7 +57,7 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background-color: #000; /* Cor da linha igual à cor da fonte */
+            background-color: #000;
         }
 
         .navbar .search {
@@ -202,12 +201,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        /* Ajuste do tamanho da imagem do logo */
+        .navbar .logo img {
+            width: 100px; /* Ajuste a largura para o tamanho do rodapé */
+            height: auto; /* Mantenha a altura proporcional */
+        }
+
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="menu">
-            <img src="rbx logo.png" alt="Blox Fruits Game">
             <a href="#">Destaques</a>
             <a href="#">Mercado</a>
             <a href="#">Criar</a>
@@ -219,6 +223,11 @@
         <div class="buttons">
             <button class="cadastrar">Cadastrar-SE</button>
             <button class="login">Entrar</button>
+        </div>
+
+        <!-- Logo RBX -->
+        <div class="logo">
+            <img src="rbx-logo.png" alt="RBX Logo">
         </div>
     </div>
 
