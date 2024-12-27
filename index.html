@@ -16,7 +16,7 @@
         .navbar {
             display: flex;
             align-items: center;
-            background-color: #dee1e3; /* Novo cinza para a barra de navegação */
+            background-color: #dee1e3; /* Cinza suave para a barra de navegação */
             color: #fff;
             padding: 0.5rem 1rem;
         }
@@ -77,15 +77,30 @@
 
         .navbar .buttons button {
             padding: 0.5rem 1rem;
-            background-color: #3a3b3c;
-            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
 
-        .navbar .buttons button:hover {
-            background-color: #555;
+        /* Estilo do botão "Cadastrar" */
+        .navbar .buttons button.cadastrar {
+            background-color: #28a745; /* Verde */
+            color: #fff;
+        }
+
+        .navbar .buttons button.cadastrar:hover {
+            background-color: #218838; /* Verde escuro ao passar o mouse */
+        }
+
+        /* Estilo do botão "Login" */
+        .navbar .buttons button.login {
+            background-color: #dee1e3; /* Cinza suave */
+            color: #000; /* Texto preto */
+            border: 2px solid #000; /* Borda preta */
+        }
+
+        .navbar .buttons button.login:hover {
+            background-color: #c8ccd1; /* Cinza um pouco mais escuro ao passar o mouse */
         }
 
         header {
@@ -190,8 +205,8 @@
         </div>
         
         <div class="buttons">
-            <button>Cadastrar</button>
-            <button>Login</button>
+            <button class="cadastrar">Cadastrar</button>
+            <button class="login">Login</button>
         </div>
     </div>
 
