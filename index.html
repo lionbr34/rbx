@@ -1,132 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar Código da URL</title>
+    <title>Blox Fruits - Fan Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
             margin: 0;
-            background: #f0f2f5;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #0099ff;
-        }
-        #code {
-            font-family: monospace;
-            background: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            text-align: center;
-        }
-        .button {
-            margin-top: 20px;
-            padding: 10px 15px;
-            font-size: 16px;
+
+        header {
+            background-color: #222;
             color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            width: 100%;
+            padding: 1rem 0;
             text-align: center;
         }
-        .button:hover {
-            background-color: #0056b3;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .instagram-images {
+
+        nav {
+            background-color: #333;
             display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
+            justify-content: center;
+            padding: 0.5rem 0;
         }
-        .instagram-images img {
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .images img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
-        .instagram-images .image {
-            flex: 1;
-            margin: 0 10px;
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
-    <script>
-        function getCodeFromUrl() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('code');
-        }
-
-        function displayCode() {
-            const code = getCodeFromUrl();
-            if (code) {
-                document.getElementById('code').textContent = code;
-            } else {
-                document.getElementById('code').textContent = 'game over';
-            }
-        }
-
-        function copyToClipboard() {
-            const code = document.getElementById('code').textContent;
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(code).then(() => {
-                    alert('Código copiado para a área de transferência!');
-                }).catch(err => {
-                    alert('Falha ao copiar o código: ' + err);
-                });
-            } else {
-                // Fallback para navegadores que não suportam o clipboard API
-                const textarea = document.createElement('textarea');
-                textarea.value = code;
-                document.body.appendChild(textarea);
-                textarea.select();
-                try {
-                    document.execCommand('copy');
-                    alert('Código copiado para a área de transferência!');
-                } catch (err) {
-                    alert('Falha ao copiar o código: ' + err);
-                }
-                document.body.removeChild(textarea);
-            }
-        }
-
-        window.onload = displayCode;
-    </script>
 </head>
 <body>
+    <header>
+        <h1>Blox Fruits Fan Page</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#images">Gallery</a>
+        <a href="#updates">Updates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-      <img src="img\face logo1.png" alt="Instagram Image 1">
-      <img src="img\face logo.png" alt="Instagram Image 1">
-      <h1>Gerador de Código</h1>
-        <p>O código está abaixo:</p>
-        <p id="code"></p>
-        <button class="button" onclick="copyToClipboard()">Copiar Código</button>
-        <div class="instagram-images">
-            <div class="image">
-                <img src="img\instagrow_icone.png" alt="Instagram Image 1">
+        <section class="section" id="about">
+            <h2>About Blox Fruits</h2>
+            <p>Blox Fruits is an adventure game on Roblox inspired by the popular anime and manga series. Explore islands, find powerful fruits, and become the strongest fighter in the sea!</p>
+        </section>
+
+        <section class="section" id="images">
+            <h2>Gallery</h2>
+            <div class="images">
+                <img src="placeholder1.jpg" alt="Image 1">
+                <img src="placeholder2.jpg" alt="Image 2">
+                <img src="placeholder3.jpg" alt="Image 3">
+                <img src="placeholder4.jpg" alt="Image 4">
             </div>
-            <div class="image">
-                <img src="img\mds.png" alt="Instagram Image 2">
-            </div>
-            <div class="image">
-                <img src="img\mds1.png" alt="Instagram Image 3">
-            </div>
-        </div>
+        </section>
+
+        <section class="section" id="updates">
+            <h2>Latest Updates</h2>
+            <p>Stay tuned for the latest updates on Blox Fruits, including new fruits, bosses, and game mechanics!</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out!</p>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Blox Fruits Fan Page. All rights reserved.</p>
+    </footer>
 </body>
 </html>
