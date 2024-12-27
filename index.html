@@ -40,6 +40,7 @@
             display: flex;
             gap: 1rem;
             flex-grow: 1;
+            align-items: center;
         }
 
         .navbar .menu a {
@@ -65,8 +66,8 @@
             align-items: center;
             background-color: #3a3b3c;
             padding: 0.3rem;
-            border-radius: 5px;
-            margin-left: 0;
+            border-radius: 20px; /* Bordas arredondadas */
+            position: relative;
         }
 
         .navbar .search input {
@@ -76,19 +77,26 @@
             color: #fff;
             background: none;
             width: 200px;
+            border-radius: 20px; /* Bordas arredondadas */
         }
 
         .navbar .search button {
             border: none;
             padding: 0.5rem;
-            background-color: #555;
+            background-color: transparent;
             color: #fff;
             cursor: pointer;
-            border-radius: 3px;
+            position: absolute;
+            left: 10px;
         }
 
-        .navbar .search button:hover {
-            background-color: #666;
+        .navbar .search button::before {
+            content: "🔍";
+            font-size: 1.2rem;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         .navbar .buttons {
@@ -204,7 +212,7 @@
         /* Ajuste do tamanho da imagem do logo */
         .navbar .logo img {
             width: 32px; /* Ajuste a largura para o tamanho do rodapé */
-            height: 32; /* Mantenha a altura proporcional */
+            height: 32px; /* Mantenha a altura proporcional */
         }
 
     </style>
@@ -212,23 +220,23 @@
 <body>
     <div class="navbar">
         <div class="menu">
-                    <div class="logo">
-            <img src="rbx logo.png" alt="RBX Logo">
-        </div>
+            <div class="logo">
+                <img src="rbx logo.png" alt="RBX Logo">
+            </div>
             <a href="#">Destaques</a>
             <a href="#">Mercado</a>
             <a href="#">Criar</a>
             <a href="#">Robux</a>
-            <button>P</button> <input type="text" placeholder="Pesquisar...">
+            <div class="search">
+                <input type="text" placeholder="Pesquisar...">
+                <button></button>
+            </div>
         </div>
         
         <div class="buttons">
             <button class="cadastrar">Cadastrar-SE</button>
             <button class="login">Entrar</button>
         </div>
-
-        <!-- Logo RBX -->
-
     </div>
 
     <div class="game-info">
