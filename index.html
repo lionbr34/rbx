@@ -17,14 +17,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #222;
+            background-color: #242526;
             color: #fff;
             padding: 0.5rem 1rem;
-        }
-
-        .navbar .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
         }
 
         .navbar .menu {
@@ -36,10 +31,41 @@
             color: #fff;
             text-decoration: none;
             font-size: 1rem;
+            padding: 0.5rem;
         }
 
         .navbar .menu a:hover {
-            text-decoration: underline;
+            background-color: #3a3b3c;
+            border-radius: 5px;
+        }
+
+        .navbar .search {
+            display: flex;
+            align-items: center;
+            background-color: #3a3b3c;
+            padding: 0.3rem;
+            border-radius: 5px;
+        }
+
+        .navbar .search input {
+            border: none;
+            padding: 0.5rem;
+            outline: none;
+            color: #fff;
+            background: none;
+        }
+
+        .navbar .search button {
+            border: none;
+            padding: 0.5rem;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .navbar .search button:hover {
+            background-color: #666;
         }
 
         header {
@@ -52,6 +78,18 @@
         header h1 {
             margin: 0;
             font-size: 3rem;
+        }
+
+        .top-footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .top-footer p {
+            margin: 0;
+            font-size: 1rem;
         }
 
         .game-info {
@@ -134,11 +172,19 @@
             <a href="#">Criar</a>
             <a href="#">Robux</a>
         </div>
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔍</button>
+        </div>
     </div>
 
     <header>
         <h1>Blox Fruits</h1>
     </header>
+
+    <div class="top-footer">
+        <p>&copy; 2024 Blox Fruits Fan Page | Todos os direitos reservados | Informações adicionais</p>
+    </div>
 
     <div class="game-info">
         <div class="image">
