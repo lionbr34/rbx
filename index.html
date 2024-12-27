@@ -29,6 +29,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             margin: 2rem auto;
             max-width: 1200px;
         }
@@ -50,6 +51,9 @@
             flex: 1;
             min-width: 300px;
             margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         .game-info .details h2 {
@@ -63,12 +67,9 @@
         }
 
         .play-button {
-            display: block;
-            width: 200px;
-            margin: 2rem auto;
+            display: inline-block;
             padding: 1rem;
-            text-align: center;
-            background-color: #ff5500;
+            background-color: #28a745;
             color: white;
             font-size: 1.2rem;
             font-weight: bold;
@@ -76,10 +77,11 @@
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s;
+            margin-top: 1rem;
         }
 
         .play-button:hover {
-            background-color: #ff3300;
+            background-color: #218838;
         }
 
         footer {
@@ -107,10 +109,9 @@
         <div class="details">
             <h2>Sobre o Jogo</h2>
             <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
+            <a href="#" class="play-button">Jogar Agora</a>
         </div>
     </div>
-
-    <a href="#" class="play-button">Jogar Agora</a>
 
     <footer>
         <p>&copy; 2024 Blox Fruits Fan Page. Todos os direitos reservados.</p>
