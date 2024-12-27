@@ -122,28 +122,15 @@
 
         .game-info {
             display: flex;
-            justify-content: space-between; /* Alinha a imagem e o texto com maior espaçamento */
-            align-items: flex-start;
+            align-items: center;
+            justify-content: space-between;
             margin: 2rem auto;
             max-width: 1200px;
         }
 
-        .game-info .image {
-            flex: 1;
-            min-width: 300px;
-            max-width: 600px;
-            margin: 1rem;
-        }
-
-        .game-info .image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
         .game-info .details {
-            flex: 2;
-            min-width: 400px; /* Tamanho maior para o texto */
+            flex: 1;
+            min-width: 400px; /* Ajuste para aumentar a largura do texto */
             margin: 1rem;
             display: flex;
             flex-direction: column;
@@ -177,6 +164,19 @@
             transform: scale(1.05);
         }
 
+        .game-info .image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            margin: 1rem;
+        }
+
+        .game-info .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
         footer {
             background-color: #222;
             color: #fff;
@@ -208,15 +208,15 @@
     </div>
 
     <div class="game-info">
+        <div class="image">
+            <img src="blox.png" alt="Blox Fruits Game">
+        </div>
         <div class="details">
             <h2>Sobre o Jogo</h2>
             <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
             <a href="#" class="play-button">
                 <img src="bt.png" alt="Play Button">
             </a>
-        </div>
-        <div class="image">
-            <img src="blox.png" alt="Blox Fruits Game">
         </div>
     </div>
 
