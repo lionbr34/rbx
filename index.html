@@ -22,10 +22,6 @@
             padding: 0.5rem 1rem;
         }
 
-        .navbar .logo img {
-            height: 40px;
-        }
-
         .navbar .menu {
             display: flex;
             gap: 1rem;
@@ -49,6 +45,7 @@
             background-color: #3a3b3c;
             padding: 0.3rem;
             border-radius: 5px;
+            margin-left: auto;
         }
 
         .navbar .search input {
@@ -70,6 +67,25 @@
 
         .navbar .search button:hover {
             background-color: #666;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 1rem;
+        }
+
+        .navbar .buttons button {
+            padding: 0.5rem 1rem;
+            background-color: #3a3b3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar .buttons button:hover {
+            background-color: #555;
         }
 
         header {
@@ -169,9 +185,7 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">
-            <img src="log.png" alt="Logo">
-        </div>
+        <div class="logo">Blox Fruits</div>
         <div class="menu">
             <a href="#">Destaques</a>
             <a href="#">Mercado</a>
@@ -181,6 +195,10 @@
         <div class="search">
             <input type="text" placeholder="Pesquisar...">
             <button>🔍</button>
+        </div>
+        <div class="buttons">
+            <button>Cadastrar</button>
+            <button>Login</button>
         </div>
     </div>
 
