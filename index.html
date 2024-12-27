@@ -64,9 +64,9 @@
         .navbar .search {
             display: flex;
             align-items: center;
-            background-color: #3a3b3c;
+            background-color: #fff; /* Fundo branco */
             padding: 0.3rem;
-            border-radius: 20px; /* Bordas arredondadas */
+            border-radius: 5px; /* Bordas mais suaves */
             position: relative;
         }
 
@@ -74,27 +74,27 @@
             border: none;
             padding: 0.5rem;
             outline: none;
-            color: #fff;
+            color: #333;
             background: none;
             width: 200px;
-            border-radius: 20px; /* Bordas arredondadas */
+            border-radius: 5px; /* Bordas mais suaves */
         }
 
         .navbar .search button {
             border: none;
             padding: 0.5rem;
             background-color: transparent;
-            color: #fff;
+            color: #333;
             cursor: pointer;
             position: absolute;
-            left: 10px;
+            left: 12px; /* Afastar a lupa um pouco mais */
         }
 
         .navbar .search button::before {
             content: "🔍";
             font-size: 1.2rem;
             position: absolute;
-            left: 10px;
+            left: 12px; /* Afastar a lupa mais para a esquerda */
             top: 50%;
             transform: translateY(-50%);
         }
