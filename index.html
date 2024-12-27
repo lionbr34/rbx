@@ -68,20 +68,19 @@
 
         .play-button {
             display: inline-block;
-            padding: 1rem;
-            background-color: #28a745;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s;
             margin-top: 1rem;
         }
 
-        .play-button:hover {
-            background-color: #218838;
+        .play-button img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .play-button img:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -109,7 +108,9 @@
         <div class="details">
             <h2>Sobre o Jogo</h2>
             <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
-            <a href="#" class="play-button">Jogar Agora</a>
+            <a href="#" class="play-button">
+                <img src="bt.png" alt="Play Button">
+            </a>
         </div>
     </div>
 
