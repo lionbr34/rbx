@@ -9,16 +9,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Cor de fundo branca */
+            background-color: #f4f4f4;
             color: #333;
         }
 
         .navbar {
             display: flex;
             align-items: center;
-            background-color: #dee1e3; /* Cinza suave para a barra de navegação */
+            background-color: #dee1e3;
             color: #fff;
-            padding: 0.5rem 1rem;
+            padding: 0.3rem 1rem; /* Barra mais fina */
         }
 
         .navbar .menu {
@@ -28,7 +28,7 @@
         }
 
         .navbar .menu a {
-            color: #000; /* Nomes em preto */
+            color: #000;
             text-decoration: none;
             font-size: 1rem;
             padding: 0.5rem;
@@ -45,7 +45,7 @@
             background-color: #3a3b3c;
             padding: 0.3rem;
             border-radius: 5px;
-            margin-left: 0; /* Remover o espaço */
+            margin-left: 0;
         }
 
         .navbar .search input {
@@ -54,7 +54,7 @@
             outline: none;
             color: #fff;
             background: none;
-            width: 200px; /* Ajuste o tamanho se necessário */
+            width: 200px;
         }
 
         .navbar .search button {
@@ -82,25 +82,23 @@
             cursor: pointer;
         }
 
-        /* Estilo do botão "Cadastrar" */
         .navbar .buttons button.cadastrar {
-            background-color: #28a745; /* Verde */
+            background-color: #28a745;
             color: #fff;
         }
 
         .navbar .buttons button.cadastrar:hover {
-            background-color: #218838; /* Verde escuro ao passar o mouse */
+            background-color: #218838;
         }
 
-        /* Estilo do botão "Login" */
         .navbar .buttons button.login {
-            background-color: #dee1e3; /* Cinza suave */
-            color: #000; /* Texto preto */
-            border: 2px solid #000; /* Borda preta */
+            background-color: #dee1e3;
+            color: #000;
+            border: 2px solid #000;
         }
 
         .navbar .buttons button.login:hover {
-            background-color: #c8ccd1; /* Cinza um pouco mais escuro ao passar o mouse */
+            background-color: #c8ccd1;
         }
 
         header {
@@ -124,9 +122,9 @@
 
         .game-info {
             display: flex;
+            justify-content: flex-start; /* Deslocando para a direita */
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             margin: 2rem auto;
             max-width: 1200px;
         }
@@ -211,15 +209,15 @@
     </div>
 
     <div class="game-info">
-        <div class="image">
-            <img src="blox.png" alt="Blox Fruits Game">
-        </div>
         <div class="details">
             <h2>Sobre o Jogo</h2>
             <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
             <a href="#" class="play-button">
                 <img src="bt.png" alt="Play Button">
             </a>
+        </div>
+        <div class="image">
+            <img src="blox.png" alt="Blox Fruits Game">
         </div>
     </div>
 
