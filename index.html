@@ -15,7 +15,6 @@
 
         .navbar {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             background-color: #242526;
             color: #fff;
@@ -25,6 +24,7 @@
         .navbar .menu {
             display: flex;
             gap: 1rem;
+            flex-grow: 1;
         }
 
         .navbar .menu a {
@@ -45,7 +45,7 @@
             background-color: #3a3b3c;
             padding: 0.3rem;
             border-radius: 5px;
-            margin-left: auto;
+            width: 200px; /* Ajuste a largura para ficar proporcional aos outros itens */
         }
 
         .navbar .search input {
@@ -54,6 +54,7 @@
             outline: none;
             color: #fff;
             background: none;
+            width: 100%; /* Faz o campo de pesquisa ocupar toda a largura da barra */
         }
 
         .navbar .search button {
@@ -72,7 +73,6 @@
         .navbar .buttons {
             display: flex;
             gap: 0.5rem;
-            margin-left: 1rem;
         }
 
         .navbar .buttons button {
