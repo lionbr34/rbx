@@ -13,6 +13,35 @@
             color: #333;
         }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            color: #fff;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+
         header {
             background: url('header-background.jpg') no-repeat center center/cover;
             color: #fff;
@@ -23,18 +52,6 @@
         header h1 {
             margin: 0;
             font-size: 3rem;
-        }
-
-        .top-footer {
-            background-color: #222;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        .top-footer p {
-            margin: 0;
-            font-size: 1rem;
         }
 
         .game-info {
@@ -109,13 +126,19 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">Blox Fruits</div>
+        <div class="menu">
+            <a href="#">Destaques</a>
+            <a href="#">Mercado</a>
+            <a href="#">Criar</a>
+            <a href="#">Robux</a>
+        </div>
+    </div>
+
     <header>
         <h1>Blox Fruits</h1>
     </header>
-
-    <div class="top-footer">
-        <p>&copy; 2024 Blox Fruits Fan Page | Todos os direitos reservados | Informações adicionais</p>
-    </div>
 
     <div class="game-info">
         <div class="image">
