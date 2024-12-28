@@ -66,9 +66,9 @@
             height: 25px;
             display: flex;
             align-items: center;
-            background-color: #fff;
+            background-color: #fff; /* Fundo branco */
             padding: 0.3rem;
-            border-radius: 5px;
+            border-radius: 5px; /* Bordas mais suaves */
             position: relative;
         }
 
@@ -79,7 +79,7 @@
             color: #333;
             background: none;
             width: 200px;
-            border-radius: 5px;
+            border-radius: 5px; /* Bordas mais suaves */
         }
 
         .navbar .search button {
@@ -89,7 +89,7 @@
             color: #333;
             cursor: pointer;
             position: absolute;
-            left: 100px;
+            left: 100px; /* Afastar a lupa um pouco mais */
         }
 
         .navbar .buttons {
@@ -124,13 +124,34 @@
             background-color: #c8ccd1;
         }
 
+        header {
+            background: url('header-background.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            display: none;
+        }
+
+        .top-footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .top-footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Adicionando margem para mover a imagem e o botão à direita */
         .game-info {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin: 2rem auto;
             max-width: 1200px;
-            margin-left: 20px;
+            margin-left: 20px; /* Mover para a direita */
         }
 
         .game-info .details {
@@ -183,27 +204,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Barra de informações */
-        .info-bar {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
-            margin-top: 1rem;
-            text-align: center;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .info-bar a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-
-        .info-bar a:hover {
-            text-decoration: underline;
+        /* Ajuste do tamanho da imagem do logo */
+        .navbar .logo img {
+            width: 32px; /* Ajuste a largura para o tamanho do rodapé */
+            height: 32px; /* Mantenha a altura proporcional */
         }
 
     </style>
@@ -233,21 +237,18 @@
     <div class="game-info">
         <div class="image">
             <img src="blox.png" alt="Blox Fruits Game">
-            <!-- Barra de informações abaixo da imagem -->
-            <div class="info-bar">
-                <a href="#">Loja</a>
-                <a href="#">Servidores</a>
-                <a href="#">Mais Informações</a>
-            </div>
         </div>
         <div class="details">
-            <h2>if gama</h2>
+            <h2>Sobre o Jogo</h2>
             <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
             <a href="#" class="play-button">
                 <img src="bt.png" alt="Play Button">
             </a>
         </div>
     </div>
-    
+
+    <footer>
+        <p>© 2024 Blox Fruits. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
