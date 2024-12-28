@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[🎁XMAS] Blox Fruits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #dee1e3;
+            color: #fff;
+            padding: 0.3rem 1rem; /* Barra mais fina */
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+            flex-grow: 1;
+        }
+
+        .navbar .menu a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #3a3b3c;
+            border-radius: 5px;
+        }
+
+        .navbar .search {
+            display: flex;
+            align-items: center;
+            background-color: #3a3b3c;
+            padding: 0.3rem;
+            border-radius: 5px;
+            margin-left: 0;
+        }
+
+        .navbar .search input {
+            border: none;
+            padding: 0.5rem;
+            outline: none;
+            color: #fff;
+            background: none;
+            width: 200px;
+        }
+
+        .navbar .search button {
+            border: none;
+            padding: 0.5rem;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .navbar .search button:hover {
+            background-color: #666;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .navbar .buttons button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar .buttons button.cadastrar {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .navbar .buttons button.cadastrar:hover {
+            background-color: #218838;
+        }
+
+        .navbar .buttons button.login {
+            background-color: #dee1e3;
+            color: #000;
+            border: 2px solid #000;
+        }
+
+        .navbar .buttons button.login:hover {
+            background-color: #c8ccd1;
+        }
+
+        header {
+            background: url('header-background.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .top-footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .top-footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .game-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+
+        .game-info .details {
+            flex: 1;
+            min-width: 400px; /* Ajuste para aumentar a largura do texto */
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .game-info .details h2 {
+            font-size: 2.5rem; /* Maior tamanho para o título */
+            margin-top: 0;
+        }
+
+        .game-info .details p {
+            font-size: 1.2rem; /* Maior tamanho para o texto */
+            line-height: 1.5;
+        }
+
+        .play-button {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .play-button img {
+            width: 305px;  /* Aumentando a largura um pouco */
+            height: 60px; /* Tornando o botão mais alto */
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .play-button img:hover {
+            transform: scale(1.05);
+        }
+
+        .game-info .image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            margin: 1rem;
+        }
+
+        .game-info .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <a href="#">Destaques</a>
+            <a href="#">Mercado</a>
+            <a href="#">Criar</a>
+            <a href="#">Robux</a>
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔍</button>
+        </div>
+        
+        <div class="buttons">
+            <button class="cadastrar">Cadastrar</button>
+            <button class="login">Login</button>
+        </div>
+    </div>
+
+    <div class="game-info">
+        <div class="image">
+            <img src="blox.png" alt="Blox Fruits Game">
+        </div>
+        <div class="details">
+            <h2>Sobre o Jogo</h2>
+            <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
+            <a href="#" class="play-button">
+                <img src="bt.png" alt="Play Button">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Blox Fruits Fan Page. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
