@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[🎁XMAS] Blox Fruits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,18 +14,33 @@
             color: #333;
         }
 
+        footer {
+            font-family: 'Merriweather', serif;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
         .navbar {
             display: flex;
             align-items: center;
             background-color: #dee1e3;
             color: #fff;
-            padding: 0.3rem 1rem; /* Barra mais fina */
+            padding: 0.3rem 1rem;
         }
 
         .navbar .menu {
             display: flex;
             gap: 1rem;
             flex-grow: 1;
+            align-items: center;
         }
 
         .navbar .menu a {
@@ -32,42 +48,48 @@
             text-decoration: none;
             font-size: 1rem;
             padding: 0.5rem;
+            position: relative;
         }
 
-        .navbar .menu a:hover {
-            background-color: #3a3b3c;
-            border-radius: 5px;
+        .navbar .menu a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #000;
         }
 
         .navbar .search {
+            width: 300px;
+            height: 25px;
             display: flex;
             align-items: center;
-            background-color: #3a3b3c;
+            background-color: #fff;
             padding: 0.3rem;
             border-radius: 5px;
-            margin-left: 0;
+            position: relative;
         }
 
         .navbar .search input {
             border: none;
             padding: 0.5rem;
             outline: none;
-            color: #fff;
+            color: #333;
             background: none;
             width: 200px;
+            border-radius: 5px;
         }
 
         .navbar .search button {
             border: none;
             padding: 0.5rem;
-            background-color: #555;
-            color: #fff;
+            background-color: transparent;
+            color: #333;
             cursor: pointer;
-            border-radius: 3px;
-        }
-
-        .navbar .search button:hover {
-            background-color: #666;
+            position: absolute;
+            left: 100px;
         }
 
         .navbar .buttons {
@@ -80,6 +102,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-weight: bold;
         }
 
         .navbar .buttons button.cadastrar {
@@ -101,23 +124,9 @@
             background-color: #c8ccd1;
         }
 
-        header {
-            background: url('header-background.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .top-footer {
-            background-color: #222;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        .top-footer p {
-            margin: 0;
-            font-size: 1rem;
+        .navbar .logo img {
+            width: 32px;
+            height: 32px;
         }
 
         .game-info {
@@ -126,11 +135,12 @@
             justify-content: space-between;
             margin: 2rem auto;
             max-width: 1200px;
+            margin-left: 120px;
         }
 
         .game-info .details {
             flex: 1;
-            min-width: 400px; /* Ajuste para aumentar a largura do texto */
+            min-width: 400px;
             margin: 1rem;
             display: flex;
             flex-direction: column;
@@ -138,13 +148,56 @@
         }
 
         .game-info .details h2 {
-            font-size: 2.5rem; /* Maior tamanho para o título */
-            margin-top: 0;
+            font-size: 2.5rem;
+            margin: 0;
+            margin-bottom: 5px;
+            margin-left: 50px;
         }
 
         .game-info .details p {
-            font-size: 1.2rem; /* Maior tamanho para o texto */
+            font-size: 1.2rem;
             line-height: 1.5;
+            margin-left: 90px;
+            color: #00BFFF;
+        }
+
+        .game-info .details span {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        .game-info .details a {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-left: 90px;
+        }
+
+        .details .info-image img {
+            width: 285px; /* Ajuste o tamanho desejado */
+            height: 50px; /* Mantém a proporção da imagem */
+            margin-top: 0px; /* Ajuste de espaçamento, se necessário */
+        }
+
+        .game-info .details b {
+            margin-bottom: 40px;
+        }
+
+        .text-name .custom-link {
+            text-decoration: none; /* Remove a linha padrão */
+            color: #4D4D4D; /* Define a cor cinza claro */
+            position: relative; /* Necessário para o efeito da linha */
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .text-name .custom-link::after {
+            content: ""; /* Elemento visual vazio */
+        }
+
+        .text-name .custom-link:hover::after {
+            /* Linha completa ao passar o mouse */
         }
 
         .play-button {
@@ -153,11 +206,10 @@
         }
 
         .play-button img {
-            width: 305px;  /* Aumentando a largura um pouco */
-            height: 60px; /* Tornando o botão mais alto */
+            width: 290px;
+            height: 70px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
         }
 
         .play-button img:hover {
@@ -166,62 +218,156 @@
 
         .game-info .image {
             flex: 1;
-            min-width: 300px;
-            max-width: 600px;
+            min-width: 500px;
+            max-width: 1200px;
             margin: 1rem;
+            position: relative;
         }
 
         .game-info .image img {
-            width: 100%;
+            width: 645px;
+            height: 365px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        .info-bar {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            height: 32px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            right: -27rem;
+            bottom: -70px;
+            width: 180%;
         }
 
-        footer p {
+        .info-bar a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .info-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .selo img {
+            width: 20px; /* Ajustado para diminuir o selo */
+            height: 20px; /* Ajustado para diminuir o selo */
+            margin-left: -280px; /* Menor margem entre o nome e o selo */
+            margin-bottom: 105px;
+            margin-top: 0px;
+        }
+
+
+
+        .descricao {
+            margin: 60px auto; /* Aumenta a margem superior em 10px */
+            max-width: 1000px;
+            padding: 0;
+            background-color: transparent;
+            font-size: 1rem;
+            line-height: 1.6;
+            box-shadow: none;
+        }
+
+        .descricao h2 {
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+
+        .descricao p {
+            color: #333;
             margin: 0;
+            font-weight: normal;
+        }
+
+        .descricao .title {
+            font-weight: normal;
+        }
+
+        /* NOVA CLASSE PARA O TEXTO "MATURIDADE: LEVE" */
+        .maturidade-text {
+            font-size: 0.6rem; /* Ajuste o tamanho da fonte */
+            font-weight: bold;
+            color: #4D4D4D;
+            margin-left: 50px; /* Para alinhar abaixo do nome do jogo */
+            margin-top: 5px;  /* Distância do nome */
         }
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="menu">
+            <div class="logo">
+                <img src="rbx logo.png" alt="RBX Logo">
+            </div>
             <a href="#">Destaques</a>
             <a href="#">Mercado</a>
             <a href="#">Criar</a>
             <a href="#">Robux</a>
-            <input type="text" placeholder="Pesquisar...">
-            <button>🔍</button>
+            <div class="search">
+                <input type="text" placeholder="Pesquisar...">
+                <button></button>
+            </div>
         </div>
-        
         <div class="buttons">
-            <button class="cadastrar">Cadastrar</button>
-            <button class="login">Login</button>
+            <button class="cadastrar">Cadastrar-SE</button>
+            <button class="login">Entrar</button>
         </div>
     </div>
 
     <div class="game-info">
         <div class="image">
             <img src="blox.png" alt="Blox Fruits Game">
+            
+            <div class="info-bar">
+                <a href="#">Loja</a>
+                <a href="#">Servidores</a>
+                <a href="#">Mais Informações</a>
+            </div>
         </div>
         <div class="details">
-            <h2>Sobre o Jogo</h2>
-            <p>Blox Fruits é um jogo de aventura no Roblox inspirado pelo famoso anime e mangá. Descubra ilhas, encontre frutas poderosas e torne-se o maior lutador dos mares!</p>
+            <h2>ㅤ[🎁XMAS] BloxㅤㅤㅤㅤFruits</h2>
+            <b class="text-name">
+                <a href="https://www.roblox.com/pt/communities/4372130" class="custom-link">‎ De:Gamer Robot IncㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤMaturidade:Leve</a>
+               
+            </b>
+            <!-- Maturidade logo abaixo -->
+            
+            
             <a href="#" class="play-button">
                 <img src="bt.png" alt="Play Button">
             </a>
+            <a href="#" class="info-image">
+                <img src="inf.jpg" alt="Info Image">
+            </a>
         </div>
+        <span class="selo">
+            <img src="selo.png" alt="Selo" />
+                    
+        </span>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Blox Fruits Fan Page. Todos os direitos reservados.</p>
-    </footer>
+    <div class="descricao">
+        <h2>Descrição</h2>
+        <p>Bem-vindo ao Blox Fruits! Torne-se um mestre espadachim ou um poderoso usuário de Blox Fruit enquanto você treina para se tornar o jogador mais forte de todos os tempos. Você pode escolher lutar contra inimigos difíceis ou ter batalhas poderosas contra chefes enquanto navega pelo oceano para encontrar segredos ocultos.</p>
+        <p><span class="title">Limite de nível atual:</span> 2450</p>
+        <p><span class="title">Frutas atuais no jogo:</span> Bomba, Espinho, Corte, Mola, Kilo, Fumaça, Giro, Chama, Falcão, Gelo, Areia, Escuridão, Ressureição, Diamante, Luz, Amor, Magma, Portal, Borracha, Tremor, Buda, Barreira, Aranha, Fénix, Relâmpago, Pata, Nevasca, Gravidade, Massa, Sombra, Veneno, Domínio, Espirito, Dragão e Leopardo</p>
+        <p><span class="title">FAQ:</span></p>
+        <ul>
+            <li>Frutas aparecem no mapa a cada hora / desaparecem após 20 minutos.</li>
+            <li>Você pode comprar frutas no Vendedor de Blox Fruits. Ele reabastece frutas aleatórias a cada 4 horas.</li>
+            <li>Mais informações na descrição do grupo.</li>
+            <li>Não explore ou faça farm automático, nossa detecção automática irá pegá-lo e não apelaremos de nossos banimentos.</li>
+        </ul>
+    </div>
 </body>
 </html>
