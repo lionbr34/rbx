@@ -1,0 +1,1 @@
+No Content: webpack:///ts/react/itemCard/constants/urlConfigs.ts

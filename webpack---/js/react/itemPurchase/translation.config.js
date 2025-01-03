@@ -1,0 +1,1 @@
+No Content: webpack:///js/react/itemPurchase/translation.config.js

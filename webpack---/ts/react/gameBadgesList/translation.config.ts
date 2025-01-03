@@ -1,0 +1,1 @@
+No Content: webpack:///ts/react/gameBadgesList/translation.config.ts

@@ -1,0 +1,1 @@
+No Content: webpack:///ts/react/gameGuidelines/translation.config.ts

@@ -1,0 +1,1 @@
+No Content: webpack:///ts/react/challenge/proofOfWork/constants/resources.ts

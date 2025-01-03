@@ -1,0 +1,1 @@
+No Content: webpack:///translation.config.ts

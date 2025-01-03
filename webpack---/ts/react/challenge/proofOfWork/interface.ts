@@ -1,0 +1,1 @@
+No Content: webpack:///ts/react/challenge/proofOfWork/interface.ts

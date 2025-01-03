@@ -1,0 +1,1 @@
+No Content: webpack:///ts/react/itemCard/translation.config.ts

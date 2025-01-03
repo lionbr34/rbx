@@ -1,0 +1,1 @@
+No Content: webpack:///js/angular/verticalMenu/directives/verticalMenuDirective.js
